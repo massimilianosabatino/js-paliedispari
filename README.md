@@ -18,11 +18,9 @@ Dichiariamo chi ha vinto.
 //Creare input utente per inserire una parola  
 //Creare una funzione per  
   => //Tramite ciclo inverso inserire le lettere in un array  
-     //Confrontare la variabile parola inserita con l'array inverso
-     //SE uguali restituire true  
-     //ALTRIMENTI restituire false 
-{Se non dovesse bastare o non si possano confrontare cosi}  
-//Confrontare i due array per ogni posizione dell'indice  
+     //Confrontare la variabile parola inserita con l'array inverso  
+//Confrontare i due array per ogni posizione dell'indice tramite ciclo  
+//Restituire il risultato
 
 
 ### Pari e Dispari
