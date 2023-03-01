@@ -26,7 +26,7 @@ Dichiariamo chi ha vinto.
 
 
 ### Pari e Dispari
-//Creare imput utente per scegliere se giocare con pari o dispari
+//Creare input utente per scegliere se giocare con pari o dispari
 //Creare una funzione per  
   =>generare numero utente e un numero computer e quindi assegnare ad ognuno un valore numerico casuale da 1 a 6  
   =>sommare i due valori  
