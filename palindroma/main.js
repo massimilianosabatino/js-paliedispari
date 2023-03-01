@@ -1,7 +1,7 @@
 'use strict';
 
 //Creare input utente per inserire una parola  
-const userWord = prompt('Inserisci una parola per sapere se è un palindromo')
+const userWord = prompt('Inserisci una parola per sapere se è un palindromo').toLocaleLowerCase();
 
 //Inverte la parola e inserisce le lettere in un array
 function reverseWord(word) {
@@ -10,6 +10,12 @@ function reverseWord(word) {
         wordReverserd.push(word[i]);  
     }
     return wordReverserd;
+    //senza utilizzare array - prova per verifica se possibile
+    // let wordReverserd = '';
+    // for (let i = word.length - 1; i >= 0; i--) {
+    //     wordReverserd += word[i];
+    // }
+    // return wordReverserd;
 }
 
 //Confrontare la variabile parola inserita con l'array inverso
@@ -31,7 +37,7 @@ const wordReverserd = reverseWord(userWord);
 const checked = confront(userWord, wordReverserd);
 
 if (checked) {
-    console.log('uguali');
+    console.log('Uguali');
 } else {
     console.log('Diverse');
 }
