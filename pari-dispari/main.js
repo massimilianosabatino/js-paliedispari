@@ -1,8 +1,19 @@
 'use strict';
 
 //Input utente per pari o dispari e numero
-const userChoice = prompt('Scegli pari o dispari');
-const userChoiceNumber = Number(prompt('Scegli un numero da 1 a 5'));
+let userChoice = '';
+let userChoiceNumber = '';
+//Controlli su input
+while (userChoice != 'pari' && userChoice != 'dispari') {
+    userChoice = prompt('Scegli pari o dispari').toLocaleLowerCase();
+}
+
+while (userChoiceNumber < 1 || userChoiceNumber > 5 || isNaN(userChoiceNumber)) {
+    userChoiceNumber = Number(prompt('Scegli un numero da 1 a 5'));
+}
+
+
+
 
 //Generazione numeri casuali per dadi utente e computer
 function randomDiceSum() {
