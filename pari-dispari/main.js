@@ -1,20 +1,13 @@
 'use strict';
 
-//SE somma % 2 = 0 e utente ha scelto pari  
-//   -> Stampa vince Utente  
-//ALTRIMENTI SE somma % 2 != 0 e utente ha scelto dispari  
-//   -> Stampa vince Utente  
-//ALTRIMENTI    
-//   -> Stampa vince Computer  
-
-//Input utente per pari o dispari
+//Input utente per pari o dispari e numero
 const userChoice = prompt('Scegli pari o dispari');
+const userChoiceNumber = Number(prompt('Scegli un numero da 1 a 5'));
 
 //Generazione numeri casuali per dadi utente e computer
 function randomDiceSum() {
-    const dice1 = Math.floor(Math.random() * (7 - 1) + 1);
-    const dice2 = Math.floor(Math.random() * (7 - 1) + 1);
-    const sumDice = dice1 + dice2;
+    const diceComputer = Math.floor(Math.random() * (6 - 1) + 1);
+    const sumDice = userChoiceNumber + diceComputer;
     return sumDice;
 }
 
